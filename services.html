@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineCollab - Projects & Crew</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Cine<span>Collab</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Projects & Crew</a></li>
+                <li><a href="portfolio.html">Showcase</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">Collaboration & Crew Board</h2>
+        <p>Explore active film projects seeking crew members or filter by production department below.</p>
+
+        <div style="margin: 1.5rem 0;">
+            <label for="filterCategory" style="font-weight: bold; margin-right: 0.5rem;">Filter Department:</label>
+            <select id="filterCategory" style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;">
+                <option value="all">Show All Departments</option>
+                <option value="pre">Pre-Production & Writing</option>
+                <option value="production">Production & Camera</option>
+                <option value="post">Post-Production & Sound</option>
+            </select>
+        </div>
+
+        <div class="grid-3">
+            <div class="card service-card" data-category="pre">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a" alt="Screenwriting">
+                <div class="card-body">
+                    <h3>Sci-Fi Feature Screenplay</h3>
+                    <p>Seeking co-writer and storyboard artist for a dystopian independent feature film shooting this summer.</p>
+                </div>
+            </div>
+            <div class="card service-card" data-category="production">
+                <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1" alt="Camera Crew">
+                <div class="card-body">
+                    <h3>Short Film: "The Last Take"</h3>
+                    <p>Looking for a talented DP and sound recordist for a 3-day psychological thriller shoot in downtown studio.</p>
+                </div>
+            </div>
+            <div class="card service-card" data-category="post">
+                <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04" alt="Sound Design">
+                <div class="card-body">
+                    <h3>Documentary Sound & Color</h3>
+                    <p>Seeking a colorist and sound designer to finalize a 45-minute environmental documentary for festival runs.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CineCollab. All Rights Reserved. Designed for CIIS 332.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
